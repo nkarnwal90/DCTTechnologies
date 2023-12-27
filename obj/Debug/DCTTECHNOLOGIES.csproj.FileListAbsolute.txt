@@ -136,6 +136,8 @@ D:\DCT\bin\roslyn\vbc.rsp
 D:\DCT\bin\roslyn\VBCSCompiler.exe
 D:\DCT\bin\roslyn\VBCSCompiler.exe.config
 D:\DCT\bin\Antlr3.Runtime.dll
+D:\DCT\bin\EntityFramework.dll
+D:\DCT\bin\EntityFramework.SqlServer.dll
 D:\DCT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 D:\DCT\bin\Microsoft.Web.Infrastructure.dll
 D:\DCT\bin\Newtonsoft.Json.dll
@@ -150,6 +152,8 @@ D:\DCT\bin\System.Web.WebPages.Deployment.dll
 D:\DCT\bin\System.Web.WebPages.dll
 D:\DCT\bin\System.Web.WebPages.Razor.dll
 D:\DCT\bin\WebGrease.dll
+D:\DCT\bin\EntityFramework.xml
+D:\DCT\bin\EntityFramework.SqlServer.xml
 D:\DCT\bin\System.Web.Helpers.xml
 D:\DCT\bin\System.Web.Mvc.xml
 D:\DCT\bin\System.Web.Optimization.xml

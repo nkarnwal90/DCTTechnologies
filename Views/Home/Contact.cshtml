@@ -1,6 +1,16 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
+<style>
+    .addressClass {
+        background: linear-gradient(to right, #23074d, #cc5333); /* Gradient background */
+        font-family: 'Arial', sans-serif;
+        margin:0px;
+    }
+</style>
+<link rel="stylesheet" href="~/Content/css/style.css" />
+<link href="~/Content/css/index.css" rel="stylesheet" />
+
 <main aria-labelledby="title">
     <div class="home-faq">
         <div class="home-faq-container">
@@ -106,15 +116,8 @@
             </div>
         </div>
     </div>
-    <address>
-        
-    </address>
-
-    <address>
+    <address class="addressClass">
         <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
         <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
     </address>
 </main>
-
-<link rel="stylesheet" href="~/Content/css/style.css" />
-<link href="~/Content/css/index.css" rel="stylesheet" />

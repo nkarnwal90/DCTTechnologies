@@ -1,0 +1,145 @@
+﻿@model DCTTECHNOLOGIES.Model.RegisterTbl
+@{
+    ViewBag.Title = "Login";
+}
+<style>
+    .CommonClass {
+        background: linear-gradient(to right, #23074d, #cc5333); /* Gradient background */
+        font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+        margin-top: 0px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col-6 {
+        width: 48%;
+    }
+
+    .card {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        color: #fff;
+        background-color: transparent;
+        border-bottom: none;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .form-control {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: #fff;
+    }
+
+    .headQuery {
+        display: flex;
+        align-self: center;
+    }
+
+    label {
+        display: block;
+        margin: 15px 0 5px;
+        align-items: center;
+    }
+
+    input, textarea {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: #fff;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        align-items: center;
+    }
+
+    .btn-primary {
+        background-color: #cc5333;
+        border: none;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        color: #fff;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: #fff;
+        margin-top: 10px;
+    }
+</style>
+<link rel="stylesheet" href="~/Content/css/style.css" />
+<link href="~/Content/css/index.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+@using (Html.BeginForm("Login", "Register"))
+{
+    @Html.AntiForgeryToken()
+    <div class="CommonClass">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Login</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <div class="form-horizontal">
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="Login" class="btn btn-success btn-success"/>
+
+                                            <input type="submit" value="Cancel" class="btn btn-danger btn-block" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+

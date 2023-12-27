@@ -460,6 +460,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(to right, #23074d, #cc5333); /* Gradient background */
+    font-family: 'Arial', sans-serif;
 }
 
 .home-details1 {
@@ -523,6 +525,8 @@
 }
 
 .home-features-container {
+    background: linear-gradient(to right, #23074d, #cc5333); /* Gradient background */
+    font-family: 'Arial', sans-serif;
     flex: 0 0 auto;
     width: 100%;
     display: flex;
@@ -1141,6 +1145,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(to right, #23074d, #cc5333); /* Gradient background */
+    font-family: 'Arial', sans-serif;
 }
 
 .home-banner {
@@ -1205,6 +1211,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(to right, #23074d, #cc5333); /* Gradient background */
+    font-family: 'Arial', sans-serif;
 }
 
 .home-faq-container {
@@ -1301,10 +1309,10 @@
     font-weight: bold;
 }
 
-.home-logo2 a:hover {
-    color: firebrick;
-    text-decoration: none;
-}
+    .home-logo2 a:hover {
+        color: firebrick;
+        text-decoration: none;
+    }
 
 .home-nav1 {
     flex: 0 0 auto;
@@ -1316,7 +1324,7 @@
 
     .home-nav1 a:hover {
         text-decoration: none;
-        color:green;
+        color: green;
     }
 
 .home-nav12 {
@@ -1743,5 +1751,97 @@
     .home-text61 {
         text-align: center;
         margin-bottom: var(--dl-space-space-oneandhalfunits);
+    }
+    .CommonClass {
+        background: linear-gradient(to right, #23074d, #cc5333); /* Gradient background */
+        font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+        margin-top: 0px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col-6 {
+        width: 48%;
+    }
+
+    .card {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        color: #fff;
+        background-color: transparent;
+        border-bottom: none;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .form-control {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: #fff;
+    }
+
+    .headQuery {
+        display: flex;
+        align-self: center;
+    }
+
+    label {
+        display: block;
+        margin: 15px 0 5px;
+        align-items: center;
+    }
+
+    input, textarea {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: #fff;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        align-items: center;
+    }
+
+    .btn-primary {
+        background-color: #cc5333;
+        border: none;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        color: #fff;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: #fff;
+        margin-top: 10px;
+    }
+    .addressClass {
+        background: linear-gradient(to right, #23074d, #cc5333); /* Gradient background */
+        font-family: 'Arial', sans-serif;
     }
 }

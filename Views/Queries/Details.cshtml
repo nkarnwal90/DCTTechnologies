@@ -1,0 +1,174 @@
+﻿@model DCTTECHNOLOGIES.Model.QueriesTbl
+
+@{
+    ViewBag.Title = "Details";
+}
+<style>
+    .CommonClass {
+        background: linear-gradient(to right, #23074d, #cc5333); /* Gradient background */
+        font-family: 'Arial', sans-serif;
+    }
+
+    .container {
+        margin-top: 0px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col-6 {
+        width: 48%;
+    }
+
+    .card {
+        color: #fff;
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+        color: #fff;
+        background-color: transparent;
+        border-bottom: none;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .form-control {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: #fff;
+    }
+
+    .headQuery {
+        display: flex;
+        align-self: center;
+    }
+
+    label {
+        display: block;
+        margin: 15px 0 5px;
+        align-items: center;
+    }
+
+    input, textarea {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: #fff;
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        align-items: center;
+    }
+
+    .btn-primary {
+        background-color: #cc5333;
+        border: none;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .btn-success {
+        background-color: #28a745;
+        color: #fff;
+    }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: #fff;
+        margin-top: 10px;
+    }
+</style>
+<link rel="stylesheet" href="~/Content/css/style.css" />
+<link href="~/Content/css/index.css" rel="stylesheet" />
+
+<div>
+    <div class="CommonClass">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Queries Details
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <div class="form-horizontal">
+                                    <dl class="dl-horizontal">
+                                        <dt class="control-label col-md-2">
+                                            @Html.DisplayNameFor(model => model.Name)
+                                        </dt>
+
+                                        <dd class="form-control">
+                                            @Html.DisplayFor(model => model.Name)
+                                        </dd>
+
+                                        <dt>
+                                            @Html.DisplayNameFor(model => model.Email)
+                                        </dt>
+
+                                        <dd class="form-control">
+                                            @Html.DisplayFor(model => model.Email)
+                                        </dd>
+
+                                        <dt>
+                                            @Html.DisplayNameFor(model => model.PhoneNumber)
+                                        </dt>
+
+                                        <dd class="form-control">
+                                            @Html.DisplayFor(model => model.PhoneNumber)
+                                        </dd>
+
+                                        <dt>
+                                            @Html.DisplayNameFor(model => model.Address)
+                                        </dt>
+
+                                        <dd class="form-control">
+                                            @Html.DisplayFor(model => model.Address)
+                                        </dd>
+
+                                        <dt>
+                                            @Html.DisplayNameFor(model => model.Comments)
+                                        </dt>
+
+                                        <dd class="form-control">
+                                            @Html.DisplayFor(model => model.Comments)
+                                        </dd>
+
+                                        <dt>
+                                            @Html.DisplayNameFor(model => model.UploadFile)
+                                        </dt>
+                                        <dd>
+                                            <a href="@(Url.Content("~/Content/UploadedFiles"+Model.UploadFile))">@Model.UploadFile</a>
+                                        </dd>
+                                        @*<dd class="form-control">
+                                            @Html.DisplayFor(model => model.UploadFile)
+                                        </dd>*@
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
